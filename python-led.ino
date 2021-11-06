@@ -25,10 +25,10 @@ void setup(){
  
 void loop(){
    Serial.print("Temperatura na entrada: ");
-   Serial.print(ktc0.readCelsius());
+   Serial.println(ktc0.readCelsius());
    Serial.print("ºC\n");
    Serial.print("Temperatura na saída: "); //IMPRIME O TEXTO NO MONITOR SERIAL
-   Serial.print(ktc1.readCelsius()); //IMPRIME NO MONITOR SERIAL A TEMPERATURA MEDIDA
-   Serial.println("ºC"); //IMPRIME O TEXTO NO MONITOR SERIAL
+   Serial.println(ktc1.readCelsius()); //IMPRIME NO MONITOR SERIAL A TEMPERATURA MEDIDA
+   Serial.print("ºC"); //IMPRIME O TEXTO NO MONITOR SERIAL
    delay(1000); //INTERVALO DE 500 MILISSEGUNDOS
 }
